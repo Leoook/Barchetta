@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <style>
+    .sensor-box { 
+      border: 2px solid #333; 
+      padding: 10px; 
+      margin: 20px auto; 
+      width: 80%; 
+      max-width: 300px; 
+      border-radius: 10px; 
+      background-color: #f9f9f9; 
+    }
+    .val { 
+      font-size: 24px; 
+      font-weight: bold; 
+      color: #0066cc; 
+    }
+  </style>
+</head>
+<body style='text-align:center; font-family:Arial;'>
+  <h1>Telecomando Rover</h1>
+  
+  <!-- Box dati sensori -->
+  <div class='sensor-box'>
+    <h3>Dati Acqua</h3>
+    <!-- Valori di esempio per la visualizzazione offline -->
+    <p>pH: <span class='val'>7.20</span></p>
+    <p>Ossigeno (DO): <span class='val'>8.26</span> mg/L</p>
+    <a href='#'><button style='padding:5px 15px;'>Aggiorna Dati</button></a>
+  </div>
+
+  <br>
+ 
+  <!-- Tabella per allineare i bottoni come un joypad -->
+  <table style='margin:auto;'>
+    <!-- Riga 1: Avanti -->
+    <tr>
+      <td></td>
+      <td><a href='#'><button style='font-size:24px; width:100px; height:80px;'>SU</button></a></td>
+      <td></td>
+    </tr>
+    <!-- Riga 2: Sinistra - Stop - Destra -->
+    <tr>
+      <td><a href='#'><button style='font-size:24px; width:100px; height:80px;'>SX</button></a></td>
+      <td><a href='#'><button style='font-size:24px; width:100px; height:80px; background-color:red; color:white;'>STOP</button></a></td>
+      <td><a href='#'><button style='font-size:24px; width:100px; height:80px;'>DX</button></a></td>
+    </tr>
+    <!-- Riga 3: Indietro -->
+    <tr>
+      <td></td>
+      <td><a href='#'><button style='font-size:24px; width:100px; height:80px;'>GIU</button></a></td>
+      <td></td>
+    </tr>
+  </table>
+ 
+</body>
+</html>
